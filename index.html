@@ -59,8 +59,19 @@
                             </div>
                             <div class="main">
                                 <img src="assets/mc_symbol.svg" alt="" class="leading-icon">
-                                <input type="text" placeholder="2412   -   7512   -   3412   -   3456">
+                                <input type="text" class="cc-number" id="cc-number" name="cc-number" aria-describedby="creditCardNumber" maxLength="19" cc-concept="card-numbers"  placeholder="2412   -   7512   -   3412   -   3456">
                                 <img src="assets/verified-badge.svg" alt="" class="trailing-icon">
+                            </div>
+                        </div>
+                        <div class="input-group __col">
+                            <div class="header">
+                                <div class="description">
+                                    <h2 class="title">Cardholder Name</h2>
+                                    <p class="desc">Enter the name on the card</p>
+                                </div>
+                            </div>
+                            <div class="main">
+                                <input type="text" class="cc-name" id="cc-name" name="cc-name" aria-describedby="creditCardName" placeholder="Enter the name in your card" cc-concept="card-name">
                             </div>
                         </div>
                         <div class="input-group __col">
@@ -83,27 +94,16 @@
                                 </div>
                             </div>
                             <div class="grp">
-                                <div class="main __date">
-                                    <input type="text" placeholder="09">
+                                <div class="main">
+                                    <input type="text" class="cc-valid-date" id="cc-valid-date" name="cc-valid-date" aria-describedby="creditCardValidDate" placeholder="MM/YY" maxLength="5" cc-concept="card-expdate" cc-side="front">
                                 </div>
-                                <span class="divider">/</span>
+                                <!-- <span class="divider">/</span>
                                 <div class="main __date">
                                     <input type="text" placeholder="22">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                        <div class="input-group __col">
-                            <div class="header">
-                                <div class="description">
-                                    <h2 class="title">password</h2>
-                                    <p class="desc">Enter your Dynamic password</p>
-                                </div>
-                            </div>
-                            <div class="main">
-                                <input type="password" placeholder="******">
-                                <img src="assets/dots.svg" alt="" class="trailing-icon">
-                            </div>
-                        </div>
+                       
                         <button type="submit" class="btn-submit">pay now</button>
                     </form>
                 </section>
@@ -118,7 +118,7 @@
                         <img src="assets/wifi.png" alt="" class="wifi">
                     </div>
                     <div class="credit-card__body">
-                        <span class="holder">jonathan micheal</span>
+                        <span class="holder">YOUR NAME</span>
                         <div class="card-digits">
                             <div class="hidden-digits">
                                 <span class="circle"></span>
@@ -126,11 +126,32 @@
                                 <span class="circle"></span>
                                 <span class="circle"></span>
                             </div>
-                            <span class="visible-digits">3456</span>
+
+                            <div class="hidden-digits">
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                            </div>
+
+                            <div class="hidden-digits">
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                            </div>
+
+                            <div class="hidden-digits">
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                            </div>
+                            <!-- <span class="visible-digits">3456</span> -->
                         </div>
                     </div>
                     <div class="credit-card__footer">
-                        <span class="expiry">09/22</span>
+                        <span class="expiry">&#9679;&#9679;/&#9679;&#9679;</span>
                         <img src="assets/mastercard-2.svg" alt="" class="logo">
                     </div>
                     <div class="card__design">
@@ -183,7 +204,7 @@
             </div>
         </div>
     </div>
-    
+    <script src="./index.js"></script>
 </body>
 </html>
 

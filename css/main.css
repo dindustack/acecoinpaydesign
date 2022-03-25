@@ -85,6 +85,8 @@ body {
 }
 .form-body form .input-group {
   margin-bottom: 2em;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
 }
 .form-body form .input-group .header {
   display: flex;
@@ -158,6 +160,14 @@ body {
 .form-body form .input-group .main input::placeholder {
   font-weight: 400;
   opacity: 0.5;
+}
+.form-body form .input-group input::-webkit-outer-spin-button,
+.form-body form .input-group input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-body form .input-group input[type=number] {
+  -moz-appearance: textfield;
 }
 .form-body form .input-group.__col {
   display: flex;
@@ -387,7 +397,8 @@ body {
   display: flex;
   align-items: center;
 }
-.checkout .checkout-details .divider .left, .checkout .checkout-details .divider .right {
+.checkout .checkout-details .divider .left,
+.checkout .checkout-details .divider .right {
   position: absolute;
   height: 2.65em;
   width: 2.65em;
