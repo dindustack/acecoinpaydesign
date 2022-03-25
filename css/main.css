@@ -230,7 +230,7 @@ body {
   float: right;
 }
 .checkout .credit-card {
-  width: 16em;
+  width: 18em;
   height: 23.4em;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), #fff);
   backdrop-filter: blur(15px);
